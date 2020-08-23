@@ -4,6 +4,33 @@ import javax.swing.JOptionPane;
 
 public class RollerCoaster {
 
+	
+	public static void main(String[] args) {
+		String fheight = JOptionPane.showInputDialog(null, "What is your height?\nFIRST ENTER HOW MA"
+				+ "NY FEET YOU ARE AND THEN\nENTER INCHES IN THE NEXT WINDOW","Roller Coaster Heigh"
+						+ "t Check",JOptionPane.INFORMATION_MESSAGE);
+		String iheight = JOptionPane.showInputDialog(null, "Now Enter Inches","Roller Coaster Height"
+				+ " Check",JOptionPane.INFORMATION_MESSAGE);
+		int fheightInt = Integer.parseInt(fheight);
+		int iheightInt = Integer.parseInt(iheight);
+	
+		int totheight = fheightInt*12 + iheightInt;
+		JOptionPane.showMessageDialog(null, "Height: "+totheight+" inches","Roller Coaster Height "
+				+ "Check",JOptionPane.INFORMATION_MESSAGE);
+		if(totheight>=59) {
+			JOptionPane.showMessageDialog(null, "You're tall enough, Enjoy the Ride!","Roller Coaster"
+					+ " Height Check",JOptionPane.INFORMATION_MESSAGE);
+		}
+		else if(totheight>=50) {
+			JOptionPane.showMessageDialog(null, "You can ride but you'll need someone to ride it wi"
+					+ "th!","Roller Coaster Height Check",JOptionPane.INFORMATION_MESSAGE);
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Sorry bud, too short :( maybe next year!","Roller Coaste"
+					+ "r Height Check",JOptionPane.INFORMATION_MESSAGE);
+		}
+	
+	}
 	// 1) Make a main method that includes all the steps below…. 
 		
 		// 2) Ask the user to enter their height in inches using JOptionPane and set it to the variable heightToRide

@@ -4,7 +4,21 @@ import javax.swing.JOptionPane;
 
 public class StringsCannotAdd {
 
-		// 1) Make a main method that includes all the steps below…. 
+		public static void main(String[] args) {
+		
+			for(int i =0; i<1;) {
+			String number1AsString = JOptionPane.showInputDialog("Enter a Number:");
+			int number1AsInt = Integer.parseInt(number1AsString);
+			String number2AsString = JOptionPane.showInputDialog("Enter another Number:");
+			int number2AsInt = Integer.parseInt(number2AsString);
+			String number3AsString = JOptionPane.showInputDialog("Enter the last Number:");
+			int number3AsInt = Integer.parseInt(number3AsString);
+			int sum = number1AsInt+number2AsInt+number3AsInt;
+			JOptionPane.showMessageDialog(null, number1AsInt +" + "+number2AsInt+" + "+number3AsInt+" = "+ sum);
+		
+		}
+		}
+	// 1) Make a main method that includes all the steps below…. 
 		
 			// 2) Ask the user to enter number 4 and hold it in the variable fourAsString 
 			

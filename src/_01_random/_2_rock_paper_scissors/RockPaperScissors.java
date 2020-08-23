@@ -82,7 +82,7 @@ public class RockPaperScissors extends JPanel implements ActionListener{
 	    
         //2. Change the value of opponentSelection to be a random number between 0 and 2; 
         Random ran = new Random();
-    	int opponentSelection = ran.nextInt(2-0+1) +0;
+    	int opponentSelection = ran.nextInt(3);
         
         //3. Run the program again. Is the result different?
  
