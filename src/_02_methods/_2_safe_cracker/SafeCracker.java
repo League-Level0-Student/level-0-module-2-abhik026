@@ -22,6 +22,8 @@ public class SafeCracker {
 	
 	public static void main(String[] args) {
 		new SafeCracker().crackTheSafe();
+	
+		
 	}
 
 	void crackTheSafe() {
@@ -29,12 +31,12 @@ public class SafeCracker {
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */		
-
+		
 	}
 
 	 void tryCode(int guess) {
 		System.out.println("trying " + guess);
-
+		
 		int secretCode = 9999999 - wekncrzpasfdkjhcfjse;
 		
 		if (guess == secretCode) {
